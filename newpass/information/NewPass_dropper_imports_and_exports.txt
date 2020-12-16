@@ -1,0 +1,200 @@
+
+Imports
+
+0x180059000: CloseHandle
+
+0x180059008: IsWow64Process
+
+0x180059010: CreateFileW
+
+0x180059018: GetModuleFileNameW
+
+0x180059020: CopyFileW
+
+0x180059028: WriteFile
+
+0x180059030: GetFullPathNameW
+
+0x180059038: HeapAlloc
+
+0x180059040: HeapFree
+
+0x180059048: GetProcessHeap
+
+0x180059050: WideCharToMultiByte
+
+0x180059058: Sleep
+
+0x180059060: MultiByteToWideChar
+
+0x180059068: GetCurrentDirectoryW
+
+0x180059070: ExpandEnvironmentStringsW
+
+0x180059078: EncodePointer
+
+0x180059080: DecodePointer
+
+0x180059088: GetCommandLineA
+
+0x180059090: GetCurrentThreadId
+
+0x180059098: GetLastError
+
+0x1800590a0: FindClose
+
+0x1800590a8: FindFirstFileExW
+
+0x1800590b0: GetDriveTypeW
+
+0x1800590b8: SystemTimeToTzSpecificLocalTime
+
+0x1800590c0: FileTimeToSystemTime
+
+0x1800590c8: HeapReAlloc
+
+0x1800590d0: IsDebuggerPresent
+
+0x1800590d8: IsProcessorFeaturePresent
+
+0x1800590e0: GetModuleHandleExW
+
+0x1800590e8: GetProcAddress
+
+0x1800590f0: GetStdHandle
+
+0x1800590f8: HeapSize
+
+0x180059100: RtlUnwindEx
+
+0x180059108: RtlPcToFileHeader
+
+0x180059110: RaiseException
+
+0x180059118: SetLastError
+
+0x180059120: GetFileType
+
+0x180059128: DeleteCriticalSection
+
+0x180059130: GetStartupInfoW
+
+0x180059138: GetCurrentProcess
+
+0x180059140: QueryPerformanceCounter
+
+0x180059148: GetCurrentProcessId
+
+0x180059150: GetSystemTimeAsFileTime
+
+0x180059158: GetEnvironmentStringsW
+
+0x180059160: FreeEnvironmentStringsW
+
+0x180059168: RtlCaptureContext
+
+0x180059170: RtlLookupFunctionEntry
+
+0x180059178: RtlVirtualUnwind
+
+0x180059180: UnhandledExceptionFilter
+
+0x180059188: SetUnhandledExceptionFilter
+
+0x180059190: InitializeCriticalSectionAndSpinCount
+
+0x180059198: TerminateProcess
+
+0x1800591a0: TlsAlloc
+
+0x1800591a8: TlsGetValue
+
+0x1800591b0: TlsSetValue
+
+0x1800591b8: TlsFree
+
+0x1800591c0: GetModuleHandleW
+
+0x1800591c8: FileTimeToLocalFileTime
+
+0x1800591d0: GetFileInformationByHandle
+
+0x1800591d8: PeekNamedPipe
+
+0x1800591e0: EnterCriticalSection
+
+0x1800591e8: LeaveCriticalSection
+
+0x1800591f0: LoadLibraryExW
+
+0x1800591f8: IsValidCodePage
+
+0x180059200: GetACP
+
+0x180059208: GetOEMCP
+
+0x180059210: GetCPInfo
+
+0x180059218: OutputDebugStringW
+
+0x180059220: GetConsoleCP
+
+0x180059228: GetConsoleMode
+
+0x180059230: SetFilePointerEx
+
+0x180059238: CompareStringW
+
+0x180059240: LCMapStringW
+
+0x180059248: GetStringTypeW
+
+0x180059250: SetStdHandle
+
+0x180059258: GetTimeZoneInformation
+
+0x180059260: SetEndOfFile
+
+0x180059268: ReadFile
+
+0x180059270: ReadConsoleW
+
+0x180059278: WriteConsoleW
+
+0x180059280: FlushFileBuffers
+
+0x180059288: SetEnvironmentVariableA
+
+0x180059290: GetModuleFileNameA
+
+0x180059298: ExitProcess
+
+0x1800592a8: ShellExecuteExW
+
+0x1800592b0: ShellExecuteW
+
+0x1800592b8: SHCreateDirectoryExW
+
+0x1800592c8: PathIsRelativeW
+
+Exports
+
+0x180042a10: Bcp47GetEnglishName
+
+0x180042a10: Bcp47GetLocalizedName
+
+0x180042a10: Bcp47GetLocalizedScript
+
+0x180042a10: DllCanUnloadNow
+
+0x180042a10: DllRegisterServer
+
+0x180042a10: GetAllDefaultApps
+
+0x180042a10: GetCompatibleInputMethodsForLanguage
+
+0x180042a10: IsImeInputMethod
+
+0x180042a10: IsTouchEnabledInputMethod
+
+0x180041740: LocalDataVer

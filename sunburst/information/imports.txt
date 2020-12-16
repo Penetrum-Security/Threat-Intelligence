@@ -1,0 +1,1 @@
+0x10002000: _CorDllMain

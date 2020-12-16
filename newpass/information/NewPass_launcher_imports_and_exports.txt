@@ -1,0 +1,444 @@
+
+Imports
+
+0x1800df150: RtlAddFunctionTable
+
+0x1800df158: VirtualAlloc
+
+0x1800df160: GetNativeSystemInfo
+
+0x1800df168: RtlDeleteFunctionTable
+
+0x1800df170: GetComputerNameExW
+
+0x1800df178: LeaveCriticalSection
+
+0x1800df180: lstrcmpA
+
+0x1800df188: lstrcmpW
+
+0x1800df190: IsWow64Process
+
+0x1800df198: VirtualProtect
+
+0x1800df1a0: InitializeCriticalSection
+
+0x1800df1a8: GetProcessHeap
+
+0x1800df1b0: GetTickCount
+
+0x1800df1b8: HeapFree
+
+0x1800df1c0: HeapAlloc
+
+0x1800df1c8: CreateMutexW
+
+0x1800df1d0: EnterCriticalSection
+
+0x1800df1d8: ReleaseMutex
+
+0x1800df1e0: GetComputerNameW
+
+0x1800df1e8: CreateThread
+
+0x1800df1f0: TerminateProcess
+
+0x1800df1f8: GetExitCodeProcess
+
+0x1800df200: TerminateThread
+
+0x1800df208: SetFilePointer
+
+0x1800df210: WriteFile
+
+0x1800df218: ReadFile
+
+0x1800df220: CreateFileW
+
+0x1800df228: ReleaseSemaphore
+
+0x1800df230: MoveFileW
+
+0x1800df238: CreateSemaphoreW
+
+0x1800df240: DeleteFileW
+
+0x1800df248: GetFileSize
+
+0x1800df250: GetFileAttributesW
+
+0x1800df258: ExpandEnvironmentStringsW
+
+0x1800df260: HeapReAlloc
+
+0x1800df268: FreeLibrary
+
+0x1800df270: LoadLibraryW
+
+0x1800df278: FileTimeToSystemTime
+
+0x1800df280: GetProcAddress
+
+0x1800df288: GetFullPathNameW
+
+0x1800df290: WideCharToMultiByte
+
+0x1800df298: GetVersionExW
+
+0x1800df2a0: MultiByteToWideChar
+
+0x1800df2a8: GetCurrentDirectoryW
+
+0x1800df2b0: CreateProcessW
+
+0x1800df2b8: ExitThread
+
+0x1800df2c0: GetCurrentThreadId
+
+0x1800df2c8: GetTempPathW
+
+0x1800df2d0: GetEnvironmentVariableW
+
+0x1800df2d8: GetCurrentProcessId
+
+0x1800df2e0: lstrcmpiW
+
+0x1800df2e8: VirtualFree
+
+0x1800df2f0: LoadLibraryA
+
+0x1800df2f8: FileTimeToDosDateTime
+
+0x1800df300: GetTempFileNameA
+
+0x1800df308: GetCurrentDirectoryA
+
+0x1800df310: FileTimeToLocalFileTime
+
+0x1800df318: GetTempPathA
+
+0x1800df320: EncodePointer
+
+0x1800df328: IsDebuggerPresent
+
+0x1800df330: IsProcessorFeaturePresent
+
+0x1800df338: GetCommandLineA
+
+0x1800df340: GetSystemTimeAsFileTime
+
+0x1800df348: FindClose
+
+0x1800df350: FindFirstFileExW
+
+0x1800df358: GetDriveTypeW
+
+0x1800df360: SystemTimeToTzSpecificLocalTime
+
+0x1800df368: SetConsoleCtrlHandler
+
+0x1800df370: GetModuleHandleExW
+
+0x1800df378: LoadLibraryExW
+
+0x1800df380: HeapSize
+
+0x1800df388: RtlUnwindEx
+
+0x1800df390: RtlCaptureContext
+
+0x1800df398: RtlLookupFunctionEntry
+
+0x1800df3a0: RtlVirtualUnwind
+
+0x1800df3a8: UnhandledExceptionFilter
+
+0x1800df3b0: SetLastError
+
+0x1800df3b8: GetCurrentProcess
+
+0x1800df3c0: TlsAlloc
+
+0x1800df3c8: TlsSetValue
+
+0x1800df3d0: TlsFree
+
+0x1800df3d8: GetStartupInfoW
+
+0x1800df3e0: GetModuleHandleW
+
+0x1800df3e8: RtlPcToFileHeader
+
+0x1800df3f0: GetStdHandle
+
+0x1800df3f8: GetFileType
+
+0x1800df400: GetModuleFileNameA
+
+0x1800df408: QueryPerformanceCounter
+
+0x1800df410: GetEnvironmentStringsW
+
+0x1800df418: FreeEnvironmentStringsW
+
+0x1800df420: IsValidCodePage
+
+0x1800df428: GetACP
+
+0x1800df430: GetOEMCP
+
+0x1800df438: GetCPInfo
+
+0x1800df440: GetTimeZoneInformation
+
+0x1800df448: GetFileInformationByHandle
+
+0x1800df450: PeekNamedPipe
+
+0x1800df458: GetStringTypeW
+
+0x1800df460: SetFilePointerEx
+
+0x1800df468: FlushFileBuffers
+
+0x1800df470: GetConsoleCP
+
+0x1800df478: GetConsoleMode
+
+0x1800df480: CompareStringW
+
+0x1800df488: LCMapStringW
+
+0x1800df490: GetLocaleInfoW
+
+0x1800df498: IsValidLocale
+
+0x1800df4a0: GetUserDefaultLCID
+
+0x1800df4a8: EnumSystemLocalesW
+
+0x1800df4b0: OutputDebugStringW
+
+0x1800df4b8: SetStdHandle
+
+0x1800df4c0: SetEndOfFile
+
+0x1800df4c8: ReadConsoleW
+
+0x1800df4d0: WriteConsoleW
+
+0x1800df4d8: SetEnvironmentVariableA
+
+0x1800df4e0: LocalFree
+
+0x1800df4e8: CloseHandle
+
+0x1800df4f0: DeleteCriticalSection
+
+0x1800df4f8: CreateToolhelp32Snapshot
+
+0x1800df500: Process32NextW
+
+0x1800df508: DecodePointer
+
+0x1800df510: SetCurrentDirectoryW
+
+0x1800df518: Process32FirstW
+
+0x1800df520: GetLastError
+
+0x1800df528: RaiseException
+
+0x1800df530: GetModuleFileNameW
+
+0x1800df538: Sleep
+
+0x1800df540: InitializeCriticalSectionAndSpinCount
+
+0x1800df548: OpenProcess
+
+0x1800df550: IsBadReadPtr
+
+0x1800df558: WaitForSingleObject
+
+0x1800df560: TlsGetValue
+
+0x1800df568: SetUnhandledExceptionFilter
+
+0x1800df570: ExitProcess
+
+0x1800df5b8: ShellExecuteW
+
+0x1800df5c0: ShellExecuteExW
+
+0x1800df5d0: PathRemoveFileSpecW
+
+0x1800df5d8: None
+
+0x1800df5e0: StrCmpW
+
+0x1800df5e8: PathFileExistsW
+
+0x1800df5f0: StrStrIW
+
+0x1800df5f8: PathIsRelativeW
+
+0x1800df630: GdipGetImagePixelFormat
+
+0x1800df638: GdipCreateBitmapFromStream
+
+0x1800df640: GdipGetImageHeight
+
+0x1800df648: GdipAlloc
+
+0x1800df650: GdipFree
+
+0x1800df658: GdipGetImageEncodersSize
+
+0x1800df660: GdipDisposeImage
+
+0x1800df668: GdipDeleteGraphics
+
+0x1800df670: GdipGetImageGraphicsContext
+
+0x1800df678: GdipDrawImageRectI
+
+0x1800df680: GdipBitmapUnlockBits
+
+0x1800df688: GdipCreateBitmapFromScan0
+
+0x1800df690: GdipSaveImageToStream
+
+0x1800df698: GdiplusShutdown
+
+0x1800df6a0: GdipSetInterpolationMode
+
+0x1800df6a8: GdipBitmapLockBits
+
+0x1800df6b0: GdipCloneImage
+
+0x1800df6b8: GdipGetImageWidth
+
+0x1800df6c0: GdiplusStartup
+
+0x1800df6c8: GdipGetImageEncoders
+
+0x1800df120: CertFreeCertificateChain
+
+0x1800df128: CryptDecodeObject
+
+0x1800df130: CertGetCertificateContextProperty
+
+0x1800df5a8: GetProcessImageFileNameW
+
+0x1800df000: RegCloseKey
+
+0x1800df008: RegEnumValueW
+
+0x1800df010: RegDeleteValueW
+
+0x1800df018: RegQueryInfoKeyW
+
+0x1800df020: CryptHashData
+
+0x1800df028: CryptDestroyHash
+
+0x1800df030: CryptDecrypt
+
+0x1800df038: CryptDestroyKey
+
+0x1800df040: CryptCreateHash
+
+0x1800df048: CryptEncrypt
+
+0x1800df050: CryptImportKey
+
+0x1800df058: CryptGenRandom
+
+0x1800df060: CryptReleaseContext
+
+0x1800df068: CryptSetKeyParam
+
+0x1800df070: CryptAcquireContextW
+
+0x1800df078: CryptGetHashParam
+
+0x1800df080: RegOpenKeyExW
+
+0x1800df088: RegEnumKeyW
+
+0x1800df090: CloseServiceHandle
+
+0x1800df098: DeleteService
+
+0x1800df0a0: OpenSCManagerW
+
+0x1800df0a8: OpenServiceW
+
+0x1800df0b0: RegDeleteKeyW
+
+0x1800df0b8: EnumServicesStatusExW
+
+0x1800df0c0: OpenProcessToken
+
+0x1800df0c8: GetSidSubAuthority
+
+0x1800df0d0: GetSidSubAuthorityCount
+
+0x1800df0d8: GetTokenInformation
+
+0x1800df0e0: RegQueryValueExW
+
+0x1800df0e8: GetUserNameA
+
+0x1800df0f0: CheckTokenMembership
+
+0x1800df0f8: FreeSid
+
+0x1800df100: IsValidSid
+
+0x1800df108: AllocateAndInitializeSid
+
+0x1800df110: LookupAccountSidW
+
+0x1800df6d8: CoInitializeEx
+
+0x1800df6e0: CoUninitialize
+
+0x1800df6e8: CoCreateInstance
+
+0x1800df580: SysFreeString
+
+0x1800df588: VariantInit
+
+0x1800df590: VariantClear
+
+0x1800df598: SysAllocString
+
+0x1800df608: gethostbyname
+
+0x1800df610: WSAStartup
+
+0x1800df618: gethostname
+
+0x1800df620: WSACleanup
+
+0x1800df140: GetAdaptersInfo
+
+Exports
+
+0x1800033c0: DllGetClassObject
+
+0x1800033c0: GetAllDefaultApps
+
+0x1800033c0: GetDefaultInputMethodForLanguage
+
+0x1800033c0: GetInputMethodDescription
+
+0x1800033c0: GetUpgradeHighlightStatusForAppID
+
+0x1800033c0: IsImmersiveInputMethod
+
+0x1800033c0: IsoScriptGetLocalizedName
+
+0x180003c20: LocalDataVer

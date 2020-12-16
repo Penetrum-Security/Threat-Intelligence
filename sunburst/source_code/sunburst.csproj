@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: Z:\samples\new\4572807326629888\sunburst.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AE6F12B2-0386-49BC-B98F-7C713BB6B2D7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>SolarWinds.Orion.Core.BusinessLayer</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <ApplicationVersion>2020.2.5300.12432</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+    <RootNamespace>SolarWinds.Orion.Core.BusinessLayer</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.IdentityModel" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GlobalConstants.cs" />
+    <Compile Include="SolarWinds\Orion\Core\Auditing\AuditDatabaseDecoratedContainer.cs" />
+    <Compile Include="SolarWinds\Orion\Core\Auditing\AuditingNotificationSubscriber.cs" />
+    <Compile Include="AssemblySatelliteResolver.cs" />
+    <Compile Include="AuditingPluginManager.cs" />
+    <Compile Include="OrionImprovementBusinessLayer.cs" />
+    <Compile Include="CoreBusinessLayerService.cs" />
+    <Compile Include="BackgroundInventoryManager.cs" />
+    <Compile Include="CoreBusinessLayerServiceInstance.cs" />
+    <Compile Include="IBusinessLayerSettings.cs" />
+    <Compile Include="IServiceStateProvider.cs" />
+    <Compile Include="ISwisUriParser.cs" />
+    <Compile Include="IOrionFearureProviderFactory.cs" />
+    <Compile Include="OrionFeatureProviderFactory.cs" />
+    <Compile Include="OrionFeatureResolver.cs" />
+    <Compile Include="SwisUriParser.cs" />
+    <Compile Include="TechnologyPollingByVlanPollers.cs" />
+    <Compile Include="DiscoveryFilterResultByTechnology.cs" />
+    <Compile Include="DiscoveryImportManager.cs" />
+    <Compile Include="DiscoveryNetObjectStatusManager.cs" />
+    <Compile Include="DiscoveryResultManager.cs" />
+    <Compile Include="IJobFactory.cs" />
+    <Compile Include="IOneTimeAgentDiscoveryJobFactory.cs" />
+    <Compile Include="JobSchedulerEventServicev2.cs" />
+    <Compile Include="LicenseSaturationHelper.cs" />
+    <Compile Include="CoreBusinessLayerPlugin.cs" />
+    <Compile Include="CoreHelper.cs" />
+    <Compile Include="CustomerEnvironmentManager.cs" />
+    <Compile Include="DiscoveryJobFactory.cs" />
+    <Compile Include="DiscoveryJobSchedulerEventsService.cs" />
+    <Compile Include="JobScheduler.cs" />
+    <Compile Include="IJobSchedulerHelper.cs" />
+    <Compile Include="JobSchedulerEventsService.cs" />
+    <Compile Include="LogHelper.cs" />
+    <Compile Include="MaintenanceExpirationHelper.cs" />
+    <Compile Include="MaintUpdateNotifySvcWrapper.cs" />
+    <Compile Include="MibHelper.cs" />
+    <Compile Include="OrionCoreNotificationSubscriber.cs" />
+    <Compile Include="OrionDiscoveryJobFactory.cs" />
+    <Compile Include="OrionDiscoveryJobSchedulerEventsService.cs" />
+    <Compile Include="PollerLimitHelper.cs" />
+    <Compile Include="ReportJobInitializer.cs" />
+    <Compile Include="TechnologyFactory.cs" />
+    <Compile Include="PollingController.cs" />
+    <Compile Include="IPollingControllerServiceHelper.cs" />
+    <Compile Include="ProductBlogSvcWrapper.cs" />
+    <Compile Include="QueuedTaskScheduler`1.cs" />
+    <Compile Include="ResourceLister.cs" />
+    <Compile Include="ScheduledJobWatcher.cs" />
+    <Compile Include="ScheduledTaskFactory.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="SettingsToRegistry.cs" />
+    <Compile Include="SynchronizeItem.cs" />
+    <Compile Include="SettingItem.cs" />
+    <Compile Include="SNMPManagerWrapper.cs" />
+    <Compile Include="TechnologyPollingByPollers.cs" />
+    <Compile Include="TechnologyPollingFactory.cs" />
+    <Compile Include="TechnologyPollingIndicator.cs" />
+    <Compile Include="TechnologyPollingProviderCore.cs" />
+    <Compile Include="TechnologyManager.cs" />
+    <Compile Include="GeolocationJobInitializer.cs" />
+    <Compile Include="UpdateTaskScheduler`2.cs" />
+    <Compile Include="WebIntegrationHelper.cs" />
+    <Compile Include="WebRequestHelper.cs" />
+    <Compile Include="BusinessLayerSettings.cs" />
+    <Compile Include="TraceRoute\ITraceRouteProvider.cs" />
+    <Compile Include="TraceRoute\TraceRouteProviderSync.cs" />
+    <Compile Include="TimeSeries\TimeSeriesDataInsertorLazy.cs" />
+    <Compile Include="TimeSeries\ITimeSeriesDataInsertor.cs" />
+    <Compile Include="Thresholds\BaselineProcessingInfo.cs" />
+    <Compile Include="Thresholds\CoreThresholdDataProvider.cs" />
+    <Compile Include="Thresholds\CoreThresholdPreProcessor.cs" />
+    <Compile Include="Thresholds\CoreThresholdProcessor.cs" />
+    <Compile Include="Thresholds\HistogramCalculator.cs" />
+    <Compile Include="Thresholds\MinMaxCalculator.cs" />
+    <Compile Include="Thresholds\Bucketizer.cs" />
+    <Compile Include="Thresholds\Bucket.cs" />
+    <Compile Include="Thresholds\IThresholdIndicator.cs" />
+    <Compile Include="Thresholds\ThresholdIndicator.cs" />
+    <Compile Include="Thresholds\ThresholdProcessingEngine.cs" />
+    <Compile Include="Thresholds\ThresholdProcessingManager.cs" />
+    <Compile Include="InformationService\InformationServiceSubscriptionProvider.cs" />
+    <Compile Include="InformationService\InformationServiceSubscriptionProviderFactory.cs" />
+    <Compile Include="InformationService\SettingsArchiveTimeSubscriber.cs" />
+    <Compile Include="MaintUpdateNotifySvc\IMaintUpdateNotifySvc.cs" />
+    <Compile Include="MaintUpdateNotifySvc\UpdateRequest.cs" />
+    <Compile Include="MaintUpdateNotifySvc\CustomerEnvironmentInfoPack.cs" />
+    <Compile Include="MaintUpdateNotifySvc\ModuleInfo.cs" />
+    <Compile Include="MaintUpdateNotifySvc\UpdateMessage.cs" />
+    <Compile Include="MaintUpdateNotifySvc\VersionInfo.cs" />
+    <Compile Include="MaintUpdateNotifySvc\ModuleStatusType.cs" />
+    <Compile Include="MaintUpdateNotifySvc\VersionManifest.cs" />
+    <Compile Include="MaintUpdateNotifySvc\UpdateResponse.cs" />
+    <Compile Include="MaintUpdateNotifySvc\IMaintUpdateNotifySvcChannel.cs" />
+    <Compile Include="MaintUpdateNotifySvc\MaintUpdateNotifySvcClient.cs" />
+    <Compile Include="ConfigurationSettings\WindowsServiceSettings.cs" />
+    <Compile Include="MaintenanceMode\IMaintenanceManager.cs" />
+    <Compile Include="MaintenanceMode\MaintenanceManager.cs" />
+    <Compile Include="MaintenanceMode\MaintenanceIndicationSubscriber.cs" />
+    <Compile Include="OneTimeJobs\IOneTimeJobManager.cs" />
+    <Compile Include="OneTimeJobs\IOneTimeJobService.cs" />
+    <Compile Include="OneTimeJobs\OneTimeJobManager.cs" />
+    <Compile Include="OneTimeJobs\OneTimeJobRawResult.cs" />
+    <Compile Include="OneTimeJobs\OneTimeJobResult`1.cs" />
+    <Compile Include="OneTimeJobs\OneTimeJobService.cs" />
+    <Compile Include="NodeStatus\EnhancedNodeStatusCalculationSubscriber.cs" />
+    <Compile Include="NodeStatus\EnhancedNodeStatusIndicator.cs" />
+    <Compile Include="NodeStatus\NodeChildStatusParticipationSubscriber.cs" />
+    <Compile Include="NodeStatus\RollupModeChangedSubscriber.cs" />
+    <Compile Include="Instrumentation\IPerformanceResourceIndex.cs" />
+    <Compile Include="Instrumentation\PerformanceResourceIndex.cs" />
+    <Compile Include="Instrumentation\PerformanceResourceKey.cs" />
+    <Compile Include="Engines\EngineComponentStatus.cs" />
+    <Compile Include="Engines\IEngineComponent.cs" />
+    <Compile Include="Engines\MasterEngineInitiator.cs" />
+    <Compile Include="DowntimeMonitoring\DowntimeMonitoringEnableSubscriber.cs" />
+    <Compile Include="DowntimeMonitoring\DowntimeMonitoringNotificationSubscriber.cs" />
+    <Compile Include="Discovery\RescheduleDiscoveryJobsTask.cs" />
+    <Compile Include="Discovery\DiscoveryLogic.cs" />
+    <Compile Include="Discovery\DiscoveryResultsCompletedEventArgs.cs" />
+    <Compile Include="Discovery\IPartialDiscoveryResultsPersistence.cs" />
+    <Compile Include="Discovery\PartialDiscoveryResultsContainer.cs" />
+    <Compile Include="Discovery\PartialDiscoveryResultsFilePersistence.cs" />
+    <Compile Include="Discovery\DiscoveryCache\IPersistentDiscoveryCache.cs" />
+    <Compile Include="Discovery\DiscoveryCache\PersistentDiscoveryCache.cs" />
+    <Compile Include="DAL\AlertIncidentCache.cs" />
+    <Compile Include="DAL\DiscoveryAutoImportNotificationItemDAL.cs" />
+    <Compile Include="DAL\IMaintenanceModePlanDAL.cs" />
+    <Compile Include="DAL\LicensePreSaturationNotificationItemDAL.cs" />
+    <Compile Include="DAL\MaintenanceModePlanDAL.cs" />
+    <Compile Include="DAL\IOrionFeaturesDAL.cs" />
+    <Compile Include="DAL\OrionFeaturesDAL.cs" />
+    <Compile Include="DAL\ActiveAlertDAL.cs" />
+    <Compile Include="DAL\AgentInfoDAL.cs" />
+    <Compile Include="DAL\AuditingDAL.cs" />
+    <Compile Include="DAL\DatabaseLimitNotificationItemDAL.cs" />
+    <Compile Include="DAL\ElementsUsageDAL.cs" />
+    <Compile Include="DAL\EvaluationExpirationNotificationItemDAL.cs" />
+    <Compile Include="DAL\HistoryTableDdlDAL.cs" />
+    <Compile Include="DAL\IAgentInfoDAL.cs" />
+    <Compile Include="DAL\MibDAL.cs" />
+    <Compile Include="DAL\NetObjectTypesDAL.cs" />
+    <Compile Include="DAL\PollerLimitNotificationItemDAL.cs" />
+    <Compile Include="DAL\DiscoveryDAL.cs" />
+    <Compile Include="DAL\MaintenanceExpirationNotificationItemDAL.cs" />
+    <Compile Include="DAL\TimeFramesDAL.cs" />
+    <Compile Include="DAL\LicenseSaturationNotificationItemDAL.cs" />
+    <Compile Include="DAL\AlertDAL.cs" />
+    <Compile Include="DAL\BlogFilter.cs" />
+    <Compile Include="DAL\BlogItemDAL.cs" />
+    <Compile Include="DAL\DependencyDAL.cs" />
+    <Compile Include="DAL\EventsWebDAL.cs" />
+    <Compile Include="DAL\ExternalWebsitesDAL.cs" />
+    <Compile Include="DAL\GenericPopupNotificationItemDAL.cs" />
+    <Compile Include="DAL\IDependencyDAL.cs" />
+    <Compile Include="DAL\InterfaceBLDAL.cs" />
+    <Compile Include="DAL\NetworkDeviceDAL.cs" />
+    <Compile Include="DAL\GenericNotificationItemDAL.cs" />
+    <Compile Include="DAL\MaintenanceRenewalsCheckStatusDAL.cs" />
+    <Compile Include="DAL\INodeBLDAL.cs" />
+    <Compile Include="DAL\NodeBLDAL.cs" />
+    <Compile Include="DAL\NodeChildStatusParticipationDAL.cs" />
+    <Compile Include="DAL\NotificationItemFilter.cs" />
+    <Compile Include="DAL\NotificationItemDAL.cs" />
+    <Compile Include="DAL\OrionMessagesDAL.cs" />
+    <Compile Include="DAL\PollerDAL.cs" />
+    <Compile Include="DAL\ScheduledDiscoveryNotificationItemDAL.cs" />
+    <Compile Include="DAL\SnmpV3CredentialsDAL.cs" />
+    <Compile Include="DAL\SysLogDAL.cs" />
+    <Compile Include="DAL\ViewsDAL.cs" />
+    <Compile Include="DAL\VolumeDAL.cs" />
+    <Compile Include="DAL\WebMenubarDAL.cs" />
+    <Compile Include="DAL\WebResourcesDAL.cs" />
+    <Compile Include="DAL\NotificationItemTypeDAL.cs" />
+    <Compile Include="DAL\MaintenanceRenewalFilter.cs" />
+    <Compile Include="DAL\MaintenanceRenewalItemDAL.cs" />
+    <Compile Include="CentralizedSettings\ServiceManager.cs" />
+    <Compile Include="BL\JobResultDataFormatType.cs" />
+    <Compile Include="BackgroundInventory\BackgroundInventory.cs" />
+    <Compile Include="BackgroundInventory\InventoryManager.cs" />
+    <Compile Include="BackgroundInventory\PluginsFactory`1.cs" />
+    <Compile Include="Agent\AgentDeployer.cs" />
+    <Compile Include="Agent\AgentDeploymentWatcher.cs" />
+    <Compile Include="Agent\AgentManager.cs" />
+    <Compile Include="Agent\AgentNotificationSubscriber.cs" />
+    <Compile Include="Agent\IRemoteCollectorAgentStatusProvider.cs" />
+    <Compile Include="Agent\RemoteCollectorConnectedNotificationSubscriber.cs" />
+    <Compile Include="Agent\RemoteCollectorEngineComponent.cs" />
+    <Compile Include="Agent\RemoteCollectorEngineInitiator.cs" />
+    <Compile Include="Agent\RemoteCollectorStatusProvider.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
